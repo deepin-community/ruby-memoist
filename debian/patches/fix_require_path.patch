@@ -1,0 +1,14 @@
+Description: fix require path
+Author: HIGUCHI Daisuke (VDR dai) <dai@debian.org>
+Last-Update: 2015-12-17
+
+Index: ruby-memoist/test/memoist_test.rb
+===================================================================
+--- ruby-memoist.orig/test/memoist_test.rb
++++ ruby-memoist/test/memoist_test.rb
+@@ -1,4 +1,4 @@
+-require 'test_helper'
++require File.expand_path('../test_helper', __FILE__)
+ require 'memoist'
+ 
+ class MemoistTest < Minitest::Test

@@ -1,0 +1,2 @@
+fix_require_path.patch
+remove_git_in_gemspec.patch
