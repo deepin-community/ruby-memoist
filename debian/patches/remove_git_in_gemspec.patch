@@ -1,0 +1,17 @@
+Description: remove git in gemspec, workaround for #827052
+Author: HIGUCHI Daisuke (VDR dai) <dai@debian.org>
+Last-Update: 2016-08-30
+
+Index: ruby-memoist/memoist.gemspec
+===================================================================
+--- ruby-memoist.orig/memoist.gemspec
++++ ruby-memoist/memoist.gemspec
+@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
+   spec.homepage      = 'https://github.com/matthewrudy/memoist'
+   spec.license       = 'MIT'
+ 
+-  spec.files         = `git ls-files -z`.split("\x0")
++  spec.files         = Dir["lib/**/*.rb"] + ["LICENSE.md","README.md"]
+   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
+   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
+   spec.require_paths = ['lib']

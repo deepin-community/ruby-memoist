@@ -1,5 +1,94 @@
-template-repository (1.0-1) unstable; urgency=medium
+ruby-memoist (0.16.2-3) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Cédric Boutillier ]
+  * [ci skip] Update team name
+  * [ci skip] Add .gitattributes to keep unwanted files out of the source
+    package
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + ruby-memoist: Add :all qualifier for ruby
+    dependency.
+
+  [ HIGUCHI Daisuke (VDR dai) ]
+  * eliminate lintian warning: ruby-interpreter-is-deprecated
+  * eliminate lintian warning: update-debian-copyright
+  * set Multi-Arch as foreign.
+  * Bump debhelper compatibility level to 13.
+  * Update Standards-Version to 4.6.1.
+
+ -- HIGUCHI Daisuke (VDR dai) <dai@debian.org>  Sun, 17 Jul 2022 16:35:01 +0900
+
+ruby-memoist (0.16.2-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ HIGUCHI Daisuke (VDR dai) ]
+  * d/control: drop myself from Uploaders.
+  * d/control: set Youhei SASAKI as Uploaders with his permission.
+  * Update Standards-Version to 4.5.0.
+
+ -- HIGUCHI Daisuke (VDR dai) <dai@debian.org>  Tue, 31 Mar 2020 15:22:49 +0900
+
+ruby-memoist (0.16.2-1) unstable; urgency=medium
+
+  [ Utkarsh Gupta ]
+  * Add salsa-ci.yml
+
+  [ HIGUCHI Daisuke (VDR dai) ]
+  * New upstream version 0.16.1
+  * New upstream version 0.16.2
+  * Use debhelper-compat instead of debian/compat
+  * Use d/tests/ instead of autopkgtest-pkg-ruby.
+  * d/salsa-ci.yml: disable salsa-ci build package any tests.
+  * d/control: set Rules-Requires-Root: as no.
+  * Update Standards-Version to 4.4.1.
+
+ -- HIGUCHI Daisuke (VDR dai) <dai@debian.org>  Mon, 30 Dec 2019 13:02:16 +0900
+
+ruby-memoist (0.16.0-2) unstable; urgency=medium
+
+  * Move Vcs-* to salsa.debian.org.
+  * migrate to gemwatch.debian.net
+  * eliminate lintian warning: insecure-copyright-format-uri
+  * Bump debhelper compatibility level to 11.
+  * Update Standards-Version to 4.1.4.
+
+ -- HIGUCHI Daisuke (VDR dai) <dai@debian.org>  Thu, 31 May 2018 12:48:18 +0900
+
+ruby-memoist (0.16.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * d/p/remove_git_in_gemspec.patch: refresh patch.
+  * Bump Standards-Version to 4.0.0 (no changes needed)
+
+ -- HIGUCHI Daisuke (VDR dai) <dai@debian.org>  Sat, 08 Jul 2017 12:41:01 +0900
+
+ruby-memoist (0.15.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/patches/remove_git_in_gemspec.patch: new file.
+    - remove git in gemspec, workaround for #827052.
+
+ -- HIGUCHI Daisuke (VDR dai) <dai@debian.org>  Tue, 30 Aug 2016 12:31:17 +0900
+
+ruby-memoist (0.14.0-2) unstable; urgency=medium
+
+  [ Cédric Boutillier ]
+  * debian/control: Use https:// in Vcs-* fields
+  * Bump Standards-Version to 3.9.7 (no changes needed)
+  [ HIGUCHI Daisuke (VDR dai) ]
+  * Bump Standards-Version to 3.9.8 (no changes needed)
+
+ -- HIGUCHI Daisuke (VDR dai) <dai@debian.org>  Sat, 02 Jul 2016 19:39:07 +0900
+
+ruby-memoist (0.14.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #808194)
+
+ -- HIGUCHI Daisuke (VDR dai) <dai@debian.org>  Thu, 17 Dec 2015 10:38:39 +0900
